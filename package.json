@@ -1,0 +1,61 @@
+{
+  "name": "support-tools-skeleton",
+  "version": "0.0.1",
+  "description": "A skeleton written in AHK to proof a concept for having a quick launcher for the commonly used tools in the support department",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "conventional-github-releaser": "^2.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "gulp-bump": "^3.1.0",
+    "gulp-conventional-changelog": "^1.1.17",
+    "gulp-git": "^2.5.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "run-sequence": "^2.2.1",
+    "serve-favicon": "~2.4.5",
+    "swagger-client": "^3.4.7"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-plugin-react": "^7.7.0",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "^5.5.0",
+    "gulp-install": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "latest",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "nodemon": "^1.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denzo22/DSS.git"
+  },
+  "keywords": [
+    "AHK",
+    "scripting",
+    "js",
+    "node",
+    "stack",
+    "python",
+    "json",
+    "html",
+    "css3"
+  ],
+  "author": "Dennis Stewart <mailto:dstewart@gannett.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denzo22/DSS/issues"
+  },
+  "homepage": "https://denzo22hub.io/DSS/"
+}

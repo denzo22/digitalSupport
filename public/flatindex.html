@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang=""></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>The Node Server Tester</title>
+  <meta name="description" content="The node server tester">
+  <meta name="author" content="Dennis Stewart">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+   <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <h1>Ideas for auto launcher</h1>
+        <h3>use an argument to provide a section of a url</h3>
+        <i>This is an example</i>
+        <p>[argument one].gannettdigital.com/desktopmodules/Services/API/DataUtility/[assetID].json?type=asset<br>Argument one would be the presto classic site<br>AssetID is the image id</p>
+        <p>This is from step 3 of uploading an image to presto classic KB21484<br>
+        This would be the lookup to get the img url to verify the upload</p>
+        <p>example filled out ...<br>https://presto-southwestgroup.gannettdigital.com/desktopmodules/Services/API/DataUtility/110488308.json?type=asset
+        <br>
+      this produces the string: /-mm-/96e333f495d50730d884d2530d73358322260871/c=167-0-288-121&r=1024x1024/local/-/media/2018/02/16/TXNMGroup/ElPaso/636543767126412466-caperton.png that we need to complete verification<br>
+    we then use from /media to verify<br>http://www.gannett-cdn.com/media/2018/02/16/TXNMGroup/ElPaso/636543767126412466-caperton.png</p>
+
+    <h2>AHK Script</h2>
+    <p>Improved auto launcher by adding a get URL get browser agent get elaspsed time script ('scripts_ahk/GetActiveBrowserURL.ahk)<br></p>
+    <h2>https://presto.gannettdigital.com/#!/</h2>
+    <p>Modify this url to insert the market id (PIND | PAPP) and then apply the query =%s
+      /* topic front search */
+      https://presto.gannettdigital.com/#!/PAPN/fronts-admin/topic-front?query=search%20term
+      /* section front search */
+      https://presto.gannettdigital.com/#!/PIND/fronts-admin/section-front?query=%s
+      /* asset search */
+      https://presto.gannettdigital.com/#!/PAPP/search?keyword=search%20string
+      /* taxonomy */
+      https://presto.gannettdigital.com/#!/PAPP/taxonomy/gannett/search/results?
+      /* ssts */
+      https://presto.gannettdigital.com/#!/PAPN/taxonomy/ssts/tree
+      keywords=search%20tag
+      example of search queries
+      /fronts-admin/section-front?query=Indy%20Organ
+      /fronts-admin/topic-front?query=Indy%20Organ
+
+      https://presto.gannettdigital.com/#!/PAPN/pressbox/articles?from=2018-01-30&to=2018-02-28
+    </p>
+
+
+</body>
+</html>
